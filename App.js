@@ -3,12 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Constants } from "expo"
 
 import Avatar from "./components/Avatar";
+import AuthorRow from "./components/AuthorRow";
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Avatar initials="TM" size={50} backgroundColor="teal"/>
+        <AuthorRow fullName="Thal Marcelin" linkText={"comments"} onPressLinkText={() => {console.log("pressed link !")} } />
       </View>
     );
   }
